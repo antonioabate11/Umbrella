@@ -6,13 +6,15 @@ import COLORS from "./src/styles/theme";
 
 import { Marketplace } from "./src/screens/Marketplace/Marketplace";
 import { Settings } from "./src/screens/Settings/Settings";
+import { Card } from "./src/screens/Cart/Card";
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={COLORS}>
       <View>
         <StatusBar translucent backgroundColor="transparent" barStyle="dark-content"/>
-        <Marketplace/>
+        <Card/>
+        {/* <Marketplace/> */}
         {/* <Settings/> */}
       </View>
       </ThemeProvider>
